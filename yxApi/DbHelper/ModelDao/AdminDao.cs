@@ -12,7 +12,7 @@ namespace yxApi.DbHelper.IRepository
 
         public Task<Admin> GetAdmin(string username,string password)
         {
-            return GetAsync("select * from v_admin where username=@username and password=@password", 
+            return GetAsync("select * from admin where username=@username and password=@password", 
                 new { username, password });
         }
     }
